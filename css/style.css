@@ -40,43 +40,40 @@
 
 .navegacao-mobile{
     display: none;
-    float: right;
     background-image: url(../img/menu.png);
-    background-position: center;
-    background-size: contain;
+    background-size: 100% 100%;
     width: 35px;
     height: 35px;
     cursor: pointer;
     margin-top:30px;
-
+    float: right;
     
 }
-.navegacao-mobile nav{
+
+
+.navegacao-mobile ul{
     display: none;
-    
-}
-
-.navegacao-mobile nav ul{
     background-color: white;
     width: 95%;
     position: absolute;
     left: 50%;
     transform: translate(-50%,-50%);
-    top: 40%;
+    top: 269px;
     border: 1px solid black;
     text-align: center;
     
 }
 
-.navegacao-mobile nav ul{
-    list-style: none;
+.navegacao-mobile ul{
+    display: none;
+    list-style-type: none;
 }
 
-.navegacao-mobile nav ul li{
+.navegacao-mobile ul li{
     padding: 20px;   
 }
 
-.navegacao-mobile nav ul li:hover{
+.navegacao-mobile ul li:hover{
     background-color: rgb(192, 184, 184);
 }
 
@@ -87,11 +84,11 @@ a{
     color: #515759;
 }
 
-.navegacao-desktop nav ul{
+.navegacao-desktop ul{
     list-style: none;
 }
 
-.navegacao-desktop nav ul li{
+.navegacao-desktop ul li{
     float: left;
     margin-left: 40px;
     
@@ -126,6 +123,115 @@ a{
         font-size:31px;
     }
 /*FIM MID*/
+
+/*Inicio sessao-1*/
+.sessao-1{
+    z-index: 1;
+    position: relative;
+    
+}
+.sessao-1 p{
+    z-index: 1; 
+    margin-top: 40px;
+    font-size: 24px;
+    
+}
+    .sessao-1 .container{
+        max-width:1200px;
+    }
+
+    img{
+        position: relative;
+        top:-125px;
+        
+    }
+/*Fim sessao-1*/
+
+/*Inicio sessao-2*/
+.sessao-2 {
+    background-color: #F3F4F5;
+    position: relative;
+    top: -131px;
+}
+
+.sessao-2 .container{
+    padding-top: 100px;
+    max-width:1200px;
+    
+}
+
+.sessao-2 h2{
+    font-weight: 200;
+    font-size:30px
+}
+
+.sessao-2 .bnt{
+    cursor: pointer;
+    margin-top: 20px;
+    width: 300px;
+    height:48px;
+    padding-top:15px;
+    background-color:#193441;
+    color: white;
+    text-align: center;
+    line-height:24px;
+    border-radius: 15px 5px 15px 5px ;
+    
+}
+
+.sessao-2 .bnt:hover{
+    background-color:#18647c;
+    border-radius: 5px 5px 5px 15px ;
+
+}
+
+.office-texto{
+    width:50%;
+    float:left;
+}
+
+.office-texto p {
+    font-size: 24px;
+    padding-top:30px;
+}
+
+.office-img{
+    background-image: url(../img/petisco.jpg);
+    height: 300px;
+    width: 50%;
+    float: left;
+    max-width: 450px;
+    background-size: contain;
+    border-radius: 80px 5px 80px 5px;
+}
+
+.artigo{
+    margin-top:70px;
+    background-color:rgba(80,86,88,.05);
+    padding: 20px 2%;
+    background-image: url(../img/aspas-invertido.png);
+    background-position: 15px 15px;
+     background-size: auto 150px;
+     background-repeat: no-repeat;
+     min-height: 160px;
+    font-size: 19px;
+}
+
+.artigo .texto-artigo {
+  padding: 2px 2% 0 15%;
+}
+
+.artigo p:last-child{
+    margin-top: 10px;
+    font-weight:bolder;
+}
+
+img.andulado2{
+    position: relative;
+    top: -135px;
+}
+
+/*fim sessao-2*/
 
 /*inicio MAX: 954px*/
     @media screen and (max-width: 954px)  {
