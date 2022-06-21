@@ -448,6 +448,19 @@ img.andulado2 {
         
     }
 
+    .sessao-5 .texto-s5{
+        width: 100%;
+        float: none;
+    }
+    
+    
+    .sessao-5 .img-s5{
+        float: none;
+        width: 100%;
+        position: static;
+        margin: 30px auto 0 auto;
+    }
+
 }
 
 /*fim MAX: 954px*/
