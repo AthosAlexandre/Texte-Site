@@ -459,6 +459,7 @@ img.andulado2 {
         width: 100%;
         position: static;
         margin: 30px auto 0 auto;
+        background-size: cover;
     }
 
 }
