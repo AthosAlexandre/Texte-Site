@@ -329,8 +329,12 @@ img.andulado2 {
     background-image: url("../img/MEU\ AMOR\ SORRINDO.jpeg");
     border-radius: 80px 5px 80px 5px;
     height: 680px;
+    max-height: 500px;
+    max-width:334px;
     background-size: cover;
     border: 2px solid white;
+    position: relative;
+    left:-120px;
 }
 /*Fim sessao-4*/
 
@@ -430,6 +434,37 @@ img.andulado4 {
 .texto-da-mulher-icone p{
     line-height: 30px;
 }
+
+.container-texto-img-principal{
+    margin-top:100px;
+}
+
+.sessao-6 .img-minha-esposa-outro-lugar{
+    background-image: url(../img/outra\ foto\ da\ minha\ eposa.jpeg);
+    max-height: 500px;
+    max-width:334px;
+    height: 634px;
+    width: 500px;
+    background-size: cover;
+    border-radius: 80px 5px 80px 5px;
+    border: 2px solid white;
+}
+
+.texto-6{
+    width:50%;
+    float:left;
+}
+.img-6{
+    width:50%;
+    float:right;
+    
+}
+
+.texto-6 p{
+    margin-top:25px;
+    font-size: 23px;
+    line-height: 30px;
+}
 /*Fim sessao-6*/
 
 
@@ -444,6 +479,13 @@ img.andulado4 {
         width: 80%;
         
     }
+
+    .sessao-4 .img-4{
+        
+        position: relative;
+        left:-50px;
+    }
+    
     
 }
 /*fim MAX: 1059px*/
@@ -502,11 +544,10 @@ img.andulado4 {
     
     .sessao-4 .img-4{
         width: 100%;
-        max-width: 500px;
         float: none;
-        background-image: url("../img/MEU\ AMOR\ SORRINDO.jpeg");
-        height: 680px;
         margin: 30px auto 0 auto;
+        position: static;
+        left:0;
         
     }
 
@@ -523,6 +564,22 @@ img.andulado4 {
         margin: 30px auto 0 auto;
         
     }
+
+    .texto-6{
+        width:100%;
+        float:none;
+    }
+    .img-6{
+        width:100%;
+        float:none;
+        
+        
+    }
+
+    .sessao-6 .img-minha-esposa-outro-lugar{
+        margin:30px auto;
+    }
+    
 
 }
 
