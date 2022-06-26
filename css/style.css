@@ -530,8 +530,9 @@ img.andulado5 {
     background-image: url(../img/mesa-de-casa.jpeg);
     background-size: cover;
     border-radius: 80px 5px 80px 5px;
-    height: 450px;
+    height: 440px;
     width: 100%;
+    max-width: 420px;
 }
 
 /*Fim sessao-7*/
