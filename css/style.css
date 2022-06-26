@@ -465,8 +465,76 @@ img.andulado4 {
     font-size: 23px;
     line-height: 30px;
 }
+
+.container-texto-img-secundario .container-tipo-romeu{
+    
+}
+
+.container-texto-img-secundario .img-tipo-romeu-e-julieta{
+    width: 100%;
+    max-width:500px;
+    height: 350px;
+    background-size: cover;
+    background-image: url(../img/tipo\ romeu\ e\ juielta\ .jpg);
+    border-radius: 80px 5px 80px 5px;
+    margin: 40px auto;
+}
+
+.container-texto-img-secundario .texto-do-romeuejulieta{
+    border-radius:20px;
+    border: 2px solid white;
+    background-color:#F1F1F1;
+    line-height: 30px;
+    padding: 5px 2% 80px 80px;
+    background-image: url("../img/aspas-invertido.png");
+    background-repeat: no-repeat;
+    background-size: auto 140px;
+    background-position:0px -1px;
+}
+
+img.andulado5 {
+    position: relative;
+    top: -230px;
+}
+
 /*Fim sessao-6*/
 
+/*inicio sessao-7*/
+.sessao-7{
+    background-color: #F3F4F5;
+    position: relative;
+    top: -240px;
+}
+.sessao-7 .container {
+    width: 100%;
+    max-width: 1200px;
+}
+
+.sessao-7 .texto-hire{
+    width: 50%;
+    float: left;
+}
+
+.sessao-7 .texto-hire p{
+    margin-top:25px;
+    font-size: 22px;
+}
+
+.sessao-7 .container-img{
+    width: 50%;
+    float: right;
+    margin-right: -20px;
+}
+
+.sessao-7 .img-salao{
+    background-image: url(../img/mesa-de-casa.jpeg);
+    background-size: cover;
+    border-radius: 80px 5px 80px 5px;
+    height: 450px;
+    width: 100%;
+}
+
+/*Fim sessao-7*/
 
 /*inicio MAX: 1059px*/
 
@@ -576,8 +644,25 @@ img.andulado4 {
         
     }
 
+
+
     .sessao-6 .img-minha-esposa-outro-lugar{
         margin:30px auto;
+    }
+
+    .sessao-7 .texto-hire{
+        width: 100%;
+        float: none;
+    }
+    
+    .sessao-7 .container-img{
+        width: 100%;
+        float: none;
+        margin-right: 0;
+    }
+
+    .sessao-7 .img-salao{
+        margin: 30px auto;
     }
     
 
