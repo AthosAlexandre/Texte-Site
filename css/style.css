@@ -8,6 +8,7 @@
     font-family: 'Courier Prime', sans-serif;
 }
 
+
 .clear {
     clear: both;
 }
@@ -54,6 +55,10 @@ body, html{
     margin-top: 30px;
     float: right;
 
+}
+
+.animation{
+    
 }
 
 
@@ -532,6 +537,7 @@ img.andulado5 {
     height: 440px;
     width: 100%;
     max-width: 420px;
+    border: 2px solid white;
 }
 
 img.andulado6 {
@@ -540,6 +546,49 @@ img.andulado6 {
 }
 
 /*Fim sessao-7*/
+
+/*inicio rodape-parte-1*/
+.rodape-parte-1{
+    position: relative;
+    top: -170px;
+    text-align: center;
+}
+.rodape-parte-1 .container {
+    width: 100%;
+    max-width: 1200px;
+}
+
+.container-menus{
+    display:flex;
+    justify-content:center;
+    gap: 20px 50px;
+    flex-wrap: wrap;
+    
+}
+nav{
+    display:flex;
+    flex-direction:column;
+    gap: 18px 10px;
+    text-align: center;
+    
+}
+
+nav a{
+    font-size:14px;
+    
+}
+
+.container-coluna{
+    display:flex;
+    flex-direction:column;
+    gap: 10px 10px;
+}
+
+.rodape-parte-1 p{
+    padding-top: 50px;
+}
+
+/*Fim rodape-parte-1*/
 
 /*inicio MAX: 1059px*/
 
