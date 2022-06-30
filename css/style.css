@@ -595,22 +595,33 @@ nav a{
     
 }
 .rodape-parte-2 .img-fot{
+    position: absolute;
     background-image: url(../img/Noshlogo.svg);
     background-attachment: fixed;
     background-position: 50% 100%;
     background-size: 500px;
     height: 212px;
-    width: 500px;
+    width: 100%;
     background-repeat: no-repeat;
     z-index: 1;
-    position: absolute;
+    
 }
 /*Fim rodape-parte-2*/
+.img-andu-ult{
+    position: relative;
+    z-index: -1000;
+    display: flex;
+    width: 100%;
+    -webkit-box-align: end;
+    -webkit-align-items: flex-end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+}
 
 .img-ultimo{
-    position: relative;
+    position: absolute;
+    top: 62px;
     z-index: 0;
-    top: 80px;
 }
 
 /*inicio MAX: 1059px*/
