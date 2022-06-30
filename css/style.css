@@ -107,7 +107,8 @@ a {
 .mid {
     border: 1px solid black;
     background-image: url(../img/lgooo.jpg);
-    background-position: center;
+    background-position:top;
+    background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
@@ -582,9 +583,35 @@ nav a{
 
 .rodape-parte-1 p{
     padding-top: 50px;
+    font-size: 20px;
 }
 
 /*Fim rodape-parte-1*/
+
+/*inicio rodape-parte-2*/
+.rodape-parte-2{
+    display:flex;
+    justify-content:center;
+    
+}
+.rodape-parte-2 .img-fot{
+    background-image: url(../img/Noshlogo.svg);
+    background-attachment: fixed;
+    background-position: 50% 100%;
+    background-size: 500px;
+    height: 212px;
+    width: 500px;
+    background-repeat: no-repeat;
+    z-index: 1;
+    position: absolute;
+}
+/*Fim rodape-parte-2*/
+
+.img-ultimo{
+    position: relative;
+    z-index: 0;
+    top: 80px;
+}
 
 /*inicio MAX: 1059px*/
 
