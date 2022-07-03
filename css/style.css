@@ -55,7 +55,7 @@ body, html{
     cursor: pointer;
     margin-top: 30px;
     float: right;
-
+    z-index: 2;
 }
 
 .navegacao-mobile ul {
@@ -68,23 +68,20 @@ body, html{
     top: 269px;
     border: 1px solid black;
     text-align: center;
-
-}
-
-.navegacao-mobile ul {
+    z-index: 1;
     display: none;
     list-style-type: none;
 }
 
+
 .navegacao-mobile ul li {
     padding: 20px;
+    position: relative;
 }
 
 .navegacao-mobile ul li:hover {
     background-color: rgb(192, 184, 184);
 }
-
-
 
 a {
     text-decoration: none;
@@ -98,7 +95,70 @@ a {
 .navegacao-desktop ul li {
     float: left;
     margin-left: 40px;
+    cursor: pointer;
+    padding-bottom: 5px;
+}
 
+    .catering{
+   border: 1px solid black; 
+   position: absolute;
+   top: 104px;
+   
+   display: none;
+   background-color: #FFFFFF;
+   border-radius: 7px;
+}
+
+.navegacao-mobile .catering{
+    top: 50px;
+    background-color: #ffffff;
+    left: calc(50% - 80px) ;
+    z-index: 1;
+}
+
+
+.contact-nav{
+   border: 1px solid black; 
+   position: absolute;
+   top: 104px;
+   display: none;
+   background-color: #FFFFFF;
+   border-radius: 7px;
+   right:0;
+}
+ .catering  a{
+    padding: 5px 10px 10px 10px;
+    text-align: left;
+}
+
+ .catering  a:hover{
+    
+    border-left: 6px solid blue;
+    background-color:#F5F6F8;
+    
+}
+
+ .contact-nav a{
+    padding: 5px 10px 10px 10px;
+    text-align: left;
+}
+
+ .contact-nav  a:hover{
+    border-left: 6px solid blue;
+    background-color:#F5F6F8;
+}
+.navegacao-mobile .contact-nav{
+    top: 50px;
+    right:calc(50% - 100px) ;
+    
+}
+
+ ul li:hover .catering  {
+    display: flex;
+}
+
+ ul li:hover .contact-nav {
+    display: flex;
 }
 
 /*FIM HEADER*/
@@ -154,7 +214,7 @@ a {
 img {
     position: relative;
     top: -125px;
-
+    
 }
 
 /*Fim sessao-1*/
@@ -627,6 +687,9 @@ nav a{
 /*inicio MAX: 1059px*/
 
 @media screen and (max-width: 1059px){
+    .sessao-1{
+        z-index: 1,5;
+    } 
     .sessao-5 .img-s5{
         background-size: cover;
     }
