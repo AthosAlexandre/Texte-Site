@@ -10,22 +10,29 @@
 </head>
 <body>
     <header class="cabecalho">
-        <img src="imagens/coding.png" alt="">
+        
         <nav class="navegacao-sobre-mim">
-            <a href="#">Home</a>
-            <a href="#">Sobre mim</a>
-            <a href="#">Projetos</a>
-            <a href="#">Habilidades</a>
-            <a href="#">Experiência</a>
+            <img src="imagens/coding.png" alt="">
+            <div class="navegacao">
+                <a href="#">Home</a>
+                <a href="#">Sobre mim</a>
+                <a href="#">Projetos</a>
+                <a href="#">Habilidades</a>
+                <a href="#">Experiência</a>
+            </div><!--navegacao-->
+
+            <div onclick="menuShow()" class="icone-mobile">
+           
+            </div><!--icone-mobile-->
         </nav><!--navegacao-sobre-mim-->
 
-        <nav class="navegacao-sobre-mim-mobile">
+        <div class="navegacao-mobile">
             <a href="#">Home</a>
             <a href="#">Sobre mim</a>
             <a href="#">Projetos</a>
             <a href="#">Habilidades</a>
             <a href="#">Experiência</a>
-        </nav><!--navegacao-sobre-mim-mobile-->
+        </div><!--navegacao-->
 
     </header><!--cabecalho-->
 
@@ -77,5 +84,6 @@
         </section><!--sessao-habilidades-->
 
     </main><!--corpo-principal-->
+    <script src="menu.js"></script>
 </body>
 </html>

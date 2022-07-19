@@ -25,10 +25,14 @@ body {
 /*fim rezet*/
 
 /*inicio header*/
-header.cabecalho img{
+header{
+    background-color:var(--laranja)
+}
+
+header.cabecalho nav.navegacao-sobre-mim img{
     width: 90px;
 }
-header.cabecalho{
+header.cabecalho nav.navegacao-sobre-mim{
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -41,7 +45,7 @@ header.cabecalho .navegacao-sobre-mim a{
     color: aliceblue;
 }
 
-header.cabecalho .navegacao-sobre-mim-mobile{
+header.cabecalho .icone-mobile{
     display: none;
     width: 30px;
     height: 30px;
@@ -49,13 +53,24 @@ header.cabecalho .navegacao-sobre-mim-mobile{
     background-image: url(imagens/menu-aberto.png);
 }
 
-header.cabecalho .navegacao-sobre-mim-mobile:hover{
+header.cabecalho .icone-mobile:hover{
     cursor: pointer;
 }
 
-header.cabecalho .navegacao-sobre-mim-mobile a{
+.navegacao-mobile{
+   
     display: none;
 }
+
+.navegacao-mobile a{
+    margin-top: 10px;
+    color: whitesmoke;
+}
+
+.navegacao-mobile a:hover{
+    background-color: #D63A5F;
+}
+
 
 /*fim header*/
 
@@ -193,31 +208,22 @@ main.corpo-princinpal section.sessao-habilidades .projeto-nosh{
 /*fim main*/
 
 @media screen and (max-width: 588px) {
-    header.cabecalho .navegacao-sobre-mim {
+    .navegacao{
         display: none;
     }
-    
-    header.cabecalho .navegacao-sobre-mim-mobile{
+
+    header.cabecalho .icone-mobile{
         display: block;
-        width: 30px;
-        height: 30px;
-        background-size: contain;
-        background-image: url(imagens/menu-aberto.png);
     }
-    
-    header.cabecalho .navegacao-sobre-mim-mobile a{
-        display: none;
+    .navegacao-mobile{
+        
+        padding: 5px;
+        flex-direction: column;
+        justify-content: flex-end;
+        text-align: center;
     }
 
-    main.corpo-princinpal section.sessao-habilidades div.container-habilidades {
-        display: grid;
-        grid-template-columns:100%;
-        max-width: 910px;
-        
-        
-    }
-
-    main.corpo-princinpal section.sessao-habilidades div.container-habilidades article{
-        margin: 0 auto;
+    .open{
+        display: flex;
     }
 }
