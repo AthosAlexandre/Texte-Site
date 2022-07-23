@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="imagens/coding-pc.png" type="image/x-icon">
+
     <title>Meu Portfólio</title>
 </head>
 <body>
@@ -13,26 +14,23 @@
         
         <nav class="navegacao-sobre-mim">
             <img src="imagens/coding.png" alt="">
-            <div class="navegacao">
+
+            <input id="hamburguer" type="checkbox" style="display:none">
+            <label for="hamburguer">
+                <div class="hamburguer active"></div><!--hamburguer-->
+            </label>
+
+            
+            <div class="navegacao active">
                 <a href="#">Home</a>
                 <a href="#">Sobre mim</a>
                 <a href="#">Projetos</a>
                 <a href="#">Habilidades</a>
                 <a href="#">Experiência</a>
             </div><!--navegacao-->
-
-            <div onclick="menuShow()" class="icone-mobile">
-           
-            </div><!--icone-mobile-->
         </nav><!--navegacao-sobre-mim-->
 
-        <div class="navegacao-mobile">
-            <a href="#">Home</a>
-            <a href="#">Sobre mim</a>
-            <a href="#">Projetos</a>
-            <a href="#">Habilidades</a>
-            <a href="#">Experiência</a>
-        </div><!--navegacao-->
+        
 
     </header><!--cabecalho-->
 
@@ -59,31 +57,64 @@
             </article><!--sobre-mim-texto-container-->
         </section><!--sessao-sobre-mim-->
 
-        <section class="sessao-habilidades">
+        <section class="sessao-projetos">
             <h2>Projetos</h2>
-            <div class="container-habilidades">
+            <div class="container-projetos">
                 <article class="projeto-nosh">
                     <img src="./imagens/nosh.jpg" alt="">
                     <h3>Nosh</h3>
                     <p>Esse projeto foi para testar minhas habilidades de front-end, uma copia do site de comida Nosh.</p>
+                    <a href="Pratica-2- Nosh/index.html" target="_blank"><div class="bnt">Visualizar</div></a>
                 </article><!--projeto-nosh-->
                 <article class="projeto-nosh">
-                    <img src="./imagens/nosh.jpg" alt="">
-                    <h3>Nosh</h3>
-                    <p>Esse projeto foi para testar minhas habilidades de front-end, uma copia do site de comida Nosh.</p>
+                    <img src="projeto-5/imagens/bg.jpg" alt="">
+                    <h3>RM VEICULOS</h3>
+                    <p>Esse projeto foi para testar minhas habilidades de front-end, um site de atividade do curso da danki-code.</p>
+                    <a href="projeto-5/index.html" target="_blank"><div class="bnt">Visualizar</div></a>
                 </article><!--projeto-nosh-->
                 <article class="projeto-nosh">
-                    <img src="./imagens/nosh.jpg" alt="">
-                    <h3>Nosh</h3>
-                    <p>Esse projeto foi para testar minhas habilidades de front-end, uma copia do site de comida Nosh.</p>
+                    <img src="projeto-3/imagens/img-danki.png" alt="">
+                    <h3>danki-code</h3>
+                    <p>Esse projeto foi para testar minhas habilidades de front-end, um site de atividade do curso da danki-code.</p>
+                    <a href="projeto-3/index.html" target="_blank"><div class="bnt">Visualizar</div></a>
                 </article><!--projeto-nosh-->
                 
-                
-            </div><!--container-Habilidades-->
+            </div><!--container-projetos-->
+        </section><!--sessao-projetos-->
 
+        <section class="sessao-habilidades">
+                <h2>Habilidades</h2>
+            <div class="container-habilidades">
+                
+                <div class="container-logos">
+                    <div class="imagens-programacao html">
+                        <img src="imagens/html-logo.png" alt="">
+                    </div><!--imagens-programacao-->
+                    
+                    <div class="imagens-programacao css">
+                        <img src="imagens/css-logo.png" alt="">
+                    </div><!--imagens-programacao-->
+                    <div class="imagens-programacao js">
+                        <img class="js-logo" src="imagens/javascript-logo.png" alt="">
+                    </div><!--imagens-programacao-->
+                    <div class="imagens-programacao jq">
+                        <img src="imagens/jQuery-logo.png" alt="">
+                    </div><!--imagens-programacao-->
+                    <div class="imagens-programacao gitHub">
+                        <img src="imagens/github-logo_icon-icons.com_73546.png" alt="">
+                    </div><!--imagens-programacao-->
+                    <div class="imagens-programacao java">
+                        <img src="imagens/java-logo.png" alt="">
+                    </div><!--imagens-programacao-->
+                </div><!--container-logos-->
+                <div class="container-texto">
+                    <p class="sobre-a-linguagem">Passe o mouse por cima de cada tecnologia ao lado.</p>
+                </div><!--container-texto-->
+            </div><!--container-habilidades-->
         </section><!--sessao-habilidades-->
 
     </main><!--corpo-principal-->
+    <script src="jquery.js"></script>
     <script src="menu.js"></script>
 </body>
 </html>

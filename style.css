@@ -26,7 +26,10 @@ body {
 
 /*inicio header*/
 header{
-    background-color:var(--laranja)
+    background-color:#fea34df9;
+    position: fixed;
+    border-bottom: 1px solid white;
+    width: 100%;
 }
 
 header.cabecalho nav.navegacao-sobre-mim img{
@@ -45,52 +48,85 @@ header.cabecalho .navegacao-sobre-mim a{
     color: aliceblue;
 }
 
-header.cabecalho .icone-mobile{
-    display: none;
-    width: 30px;
-    height: 30px;
-    background-size: contain;
-    background-image: url(imagens/menu-aberto.png);
+.navegacao{
+    display: flex;
 }
 
-header.cabecalho .icone-mobile:hover{
-    cursor: pointer;
+.hamburguer{
+
+width: 30px;
+height: 30px;
+
+background-color: transparent;
+border-radius:5px;
+border: 0;
+
+position: relative;
+cursor: pointer;
+background-color: #D63A5F;
+display: none;
+
+
+
 }
 
-.navegacao-mobile{
-   
-    display: none;
+.hamburguer:after{
+    content: '';
+    position: absolute;
+    top: 35%;
+    left: 15%;
+    width: 70%;
+    height: 5%;
+    border-radius: 5px;
+
+    background-color: #fff;
+    transition: 1s;
 }
 
-.navegacao-mobile a{
-    margin-top: 10px;
-    color: whitesmoke;
+.hamburguer:before{
+    content: '';
+    position: absolute;
+    top: 55%;
+    left: 15%;
+    width: 70%;
+    height: 5%;
+    border-radius: 5px;
+
+    background-color: #fff;
+    transition: 1s;
 }
 
-.navegacao-mobile a:hover{
-    background-color: #D63A5F;
+#hamburguer:checked ~ label .hamburguer:after{
+    transform: rotate(225deg);
+    top: 45%;
 }
 
+#hamburguer:checked ~ label .hamburguer:before{
+    transform: rotate(-225deg);
+    top: 45%;
+}
 
 /*fim header*/
 
 /*inicio main*/
-
+.corpo-princinpal{
+    padding-top:150px;
+}
 /*inicio sessao-home-cont*/
-main.corpo-princinpal section.sessao-home-cont{
+ section.sessao-home-cont{
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
     align-items: center;
-    border-top: 1px solid white;
+    
 }
 
-main.corpo-princinpal section.sessao-home-cont img{
+ section.sessao-home-cont img{
     width: 100%;
     max-width: 600px;
     min-width: 350px;
 }
-main.corpo-princinpal section.sessao-home-cont p{
+ section.sessao-home-cont p{
     color: var(--vermelho);
     margin-top:10px;
 }
@@ -101,7 +137,7 @@ main.corpo-princinpal h2{
     font-size: 27px;
 }
 
-main.corpo-princinpal section.sessao-home-cont h2:last-of-type{
+section.sessao-home-cont h2:last-of-type{
     margin-top:10px;
 }
 
@@ -112,12 +148,12 @@ main.corpo-princinpal h1{
     font-size: 40px;
 }
 
-main.corpo-princinpal section.sessao-home-cont div.container-bnt{
+section.sessao-home-cont div.container-bnt{
     display: flex;
     justify-content: space-between;
 }
 
-main.corpo-princinpal section.sessao-home-cont button{
+ section.sessao-home-cont button{
     width: 140px;
     height: 40px;
     cursor: pointer;
@@ -127,17 +163,17 @@ main.corpo-princinpal section.sessao-home-cont button{
     color: white;
 }
 
-main.corpo-princinpal section.sessao-home-cont button.bnt-git{
+ section.sessao-home-cont button.bnt-git{
     border: 2px solid #E74B27;
 }
 
-main.corpo-princinpal section.sessao-home-cont button.bnt-link{
+ section.sessao-home-cont button.bnt-link{
     border: 2px solid #0A66C2;
 }
 /*fim sessao-home-cont*/
 
 /*inicio sessao-sobre-mim*/
-main.corpo-princinpal section.sessao-sobre-mim{
+ section.sessao-sobre-mim{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -147,29 +183,30 @@ main.corpo-princinpal section.sessao-sobre-mim{
     column-gap: 90px;
     
 }
-main.corpo-princinpal section.sessao-sobre-mim img{
+ section.sessao-sobre-mim img{
     width: 100%;
     max-width:300px;
     border-radius: 150px;
 }
 
-main.corpo-princinpal section.sessao-sobre-mim article.sobre-mim-texto-container{
+ section.sessao-sobre-mim article.sobre-mim-texto-container{
     max-width: 600px;
+    padding: 0 2%;
 }
 
-main.corpo-princinpal section.sessao-sobre-mim article.sobre-mim-texto-container h2{
+ section.sessao-sobre-mim article.sobre-mim-texto-container h2{
     font-size: 40px;
 }
 
-main.corpo-princinpal section.sessao-sobre-mim article.sobre-mim-texto-container p{
+ section.sessao-sobre-mim article.sobre-mim-texto-container p{
     color:white;
 }
 
 /*fim sessao-sobre-mim*/
 
-/*inicio sessao-habilidades*/
+/*inicio sessao-projetos*/
 
-main.corpo-princinpal section.sessao-habilidades div.container-habilidades {
+ section.sessao-projetos div.container-projetos {
     display: grid;
     grid-template-columns:33.3% 33.3% 33.3%;
     max-width: 910px;
@@ -177,53 +214,186 @@ main.corpo-princinpal section.sessao-habilidades div.container-habilidades {
     
 }
 
-main.corpo-princinpal section.sessao-habilidades h2{
+ section.sessao-projetos h2{
     text-align: center;
     margin-bottom: 50px;
     font-size: 40px;
 }
 
-main.corpo-princinpal section.sessao-habilidades h3{
+ section.sessao-projetos h3{
     color: var(--azul-fraco);
 }
 
-main.corpo-princinpal section.sessao-habilidades p{
+ section.sessao-projetos p{
     color:white;
 }
 
-main.corpo-princinpal section.sessao-habilidades article.projeto-nosh img{
+ section.sessao-projetos article.projeto-nosh img{
     width: 100%;
     max-width: 300px;
+    height: 300px;
 }
 
-main.corpo-princinpal section.sessao-habilidades .projeto-nosh{
+ section.sessao-projetos .projeto-nosh{
     max-width:100%;
     width: 300px;
     padding: 2%;
     
 }
 
+section.sessao-projetos article .bnt{
+    width: 100px;
+    height: 50px;
+    background-color: var(--azul-fraco);
+    text-align: center;
+    line-height: 50px;
+    border-radius:10px;
+    margin-top: 10px;
+}
+
+section.sessao-projetos article .bnt:hover{
+    background-color: #3f7884;
+}
+
+
+/*fim sessao-projetos*/
+
+/*inicio sessao-habilidades*/
+
+.sessao-habilidades{
+    padding-top:100px;
+    max-width:1100px;
+    margin: 0 auto;
+}
+
+.sessao-habilidades p{
+    color:white;
+    font-size:23px;
+
+}
+
+.sessao-habilidades h2{
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 50px;
+}
+
+.container-habilidades{
+    display: flex;
+    gap: 50px;
+    
+}
+
+.container-logos{
+    display: grid;
+    grid-template-columns:33% 33% 33%;
+    width: 50%;
+}
+
+.container-texto{
+    width: 50%;
+}
+
+.container-habilidades img{
+    max-width: 150px;
+    width:100% ;
+}
+
+.container-habilidades img.js-logo{
+ border-radius:20px;
+}
+
+.imagens-programacao{
+    background-color: white;
+    margin: 15px;
+    border-radius: 20px;
+}
+
+.container-habilidades .container-texto p.sobre-a-linguagem{
+    margin-top:30px;
+}
+
+/*inicio parte do javaScript*/
+.container-habilidades .container-texto p.nome-tecnologia{
+    margin-top:10px;
+}
+.container-habilidades .container-texto p.sobre-tecnologia{
+    margin-top:30px;
+}
+
+.container-habilidades .container-texto p.experiencia-tecnologia{
+    margin-top:30px;
+}
+/*fim parte do javaScript*/
+
 /*fim sessao-habilidades*/
 
 /*fim main*/
 
-@media screen and (max-width: 588px) {
-    .navegacao{
-        display: none;
-    }
-
-    header.cabecalho .icone-mobile{
-        display: block;
-    }
-    .navegacao-mobile{
-        
-        padding: 5px;
-        flex-direction: column;
-        justify-content: flex-end;
-        text-align: center;
-    }
-
-    .open{
+@media screen and (max-width: 1009px){
+    .container-habilidades{
         display: flex;
+        gap: 50px;
+        flex-wrap: wrap;
     }
+
+    
+    
+    .container-logos{
+        display: grid;
+        grid-template-columns:33% 33% 33%;
+        width: 100%;
+        order: 1;
+        max-width: 500px;
+        margin: 0 auto;
+    }
+
+    .container-texto{
+        width: 100%;
+        order: 2;
+        height: 350px;
+        max-width: 500px;
+        margin: 0 auto;
+        padding: 0 2%;
+    }
+}
+
+@media screen and (max-width: 860px) {
+    section.sessao-projetos div.container-projetos {
+        grid-template-columns:100%;
+    }
+
+    section.sessao-projetos div.container-projetos article{
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 588px) {
+    
+    .hamburguer{
+        display: block;
+        z-index: 999;
+    }
+    
+
+    .navegacao{
+        position: fixed;
+        top: 0;
+        margin: 0;
+        right: 0;
+        height: 100vh;
+        background-color: #784e26;
+        flex-direction: column;
+        align-items: center;
+        padding: 100px 20px;
+        gap: 20px;
+        width: 100%;
+        max-width:300px;
+        transition: 1s ease;
+    }
+
+    .navegacao.active{
+        right: -100%;
+    }
+    
 }
