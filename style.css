@@ -19,6 +19,10 @@
     font-family: var(--font-importada);
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: #27283D;
 }
@@ -30,6 +34,8 @@ header{
     position: fixed;
     border-bottom: 1px solid white;
     width: 100%;
+    overflow: hidden;
+    top: 0;
 }
 
 header.cabecalho nav.navegacao-sobre-mim img{
@@ -46,6 +52,12 @@ header.cabecalho nav.navegacao-sobre-mim{
 header.cabecalho .navegacao-sobre-mim a{
     margin-left: 20px;
     color: aliceblue;
+}
+
+header.cabecalho .navegacao-sobre-mim a:hover{
+    color:#D63A5F;
+    transition: .5s ease;
+    border-radius: 5px;
 }
 
 .navegacao{
@@ -109,16 +121,15 @@ display: none;
 /*fim header*/
 
 /*inicio main*/
-.corpo-princinpal{
-    padding-top:150px;
-}
+
 /*inicio sessao-home-cont*/
  section.sessao-home-cont{
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
     align-items: center;
-    
+    padding-top:150px;
+    padding-bottom:80px;
 }
 
  section.sessao-home-cont img{
@@ -178,10 +189,9 @@ section.sessao-home-cont div.container-bnt{
     justify-content: center;
     flex-wrap: wrap;
     align-items: center;
-    padding-top:100px;
-    padding-bottom:100px;
+    padding-top:160px;
     column-gap: 90px;
-    
+    padding-bottom:180px;
 }
  section.sessao-sobre-mim img{
     width: 100%;
@@ -206,6 +216,10 @@ section.sessao-home-cont div.container-bnt{
 
 /*inicio sessao-projetos*/
 
+section.sessao-projetos {
+    padding-top:130px;
+}
+
  section.sessao-projetos div.container-projetos {
     display: grid;
     grid-template-columns:33.3% 33.3% 33.3%;
@@ -216,7 +230,7 @@ section.sessao-home-cont div.container-bnt{
 
  section.sessao-projetos h2{
     text-align: center;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
     font-size: 40px;
 }
 
@@ -246,13 +260,13 @@ section.sessao-projetos article .bnt{
     height: 50px;
     background-color: var(--azul-fraco);
     text-align: center;
-    line-height: 50px;
     border-radius:10px;
     margin-top: 10px;
 }
 
 section.sessao-projetos article .bnt:hover{
     background-color: #3f7884;
+    cursor: pointer;
 }
 
 
@@ -261,7 +275,7 @@ section.sessao-projetos article .bnt:hover{
 /*inicio sessao-habilidades*/
 
 .sessao-habilidades{
-    padding-top:100px;
+    padding-top:130px;
     max-width:1100px;
     margin: 0 auto;
 }
@@ -272,10 +286,10 @@ section.sessao-projetos article .bnt:hover{
 
 }
 
-.sessao-habilidades h2{
+main.corpo-princinpal .sessao-habilidades h2{
     text-align: center;
     margin-bottom: 50px;
-    font-size: 50px;
+    font-size: 40px;
 }
 
 .container-habilidades{
@@ -328,6 +342,41 @@ section.sessao-projetos article .bnt:hover{
 
 /*fim sessao-habilidades*/
 
+/*inicio sessao-experiencia*/
+    
+.sessao-experiencia{
+margin-top:50px;
+padding-top: 120px;
+}
+
+main.corpo-princinpal .sessao-experiencia h2{
+    text-align:center;
+    font-size:40px;
+    margin-bottom: 20px;
+    
+}
+
+.container-experiencia{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+    padding: 2%;
+}
+
+.container-experiencia p{
+    color:white;
+    font-size: 25px;
+    
+}
+
+.container-experiencia img{
+    max-width: 300px;
+    
+}
+
+/*fim sessao-experiencia*/
 /*fim main*/
 
 @media screen and (max-width: 1009px){
