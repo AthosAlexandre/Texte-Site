@@ -376,6 +376,17 @@ main.corpo-princinpal .sessao-experiencia h2{
     
 }
 
+/*inicio footer*/
+footer{
+    display: flex;
+    justify-content: center;
+    padding: 30px 2%;
+    border-top: 1px solid white;
+    background-color:#fea34df9;
+    color: white;
+}
+/*fim footer*/
+
 /*fim sessao-experiencia*/
 /*fim main*/
 
