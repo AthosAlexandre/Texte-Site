@@ -64,60 +64,49 @@ header.cabecalho .navegacao-sobre-mim a:hover{
     display: flex;
 }
 
+#checkbox{
+    display:none;
+}
+
 .hamburguer{
-
-width: 30px;
-height: 30px;
-
-background-color: transparent;
-border-radius:5px;
-border: 0;
-
-position: relative;
-cursor: pointer;
-background-color: #D63A5F;
-display: none;
-
-
-
+    position: relative;
+    padding: 10px 25px 12px 3px;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    width: 5px;
 }
 
-.hamburguer:after{
-    content: '';
+.line{
     position: absolute;
-    top: 35%;
-    left: 15%;
-    width: 70%;
-    height: 5%;
-    border-radius: 5px;
-
+    width: 23px;
+    height: 2px;
     background-color: #fff;
-    transition: 1s;
+    border-radius:3px;
+    transition: transform .25s, opacity .35s;
 }
 
-.hamburguer:before{
-    content: '';
-    position: absolute;
-    top: 55%;
-    left: 15%;
-    width: 70%;
-    height: 5%;
-    border-radius: 5px;
-
-    background-color: #fff;
-    transition: 1s;
+.line--top{
+    transform: translateY(-7px);
 }
 
-#hamburguer:checked ~ label .hamburguer:after{
-    transform: rotate(225deg);
-    top: 45%;
+.line--bottom{
+    transform: translateY(7px);
 }
 
-#hamburguer:checked ~ label .hamburguer:before{
-    transform: rotate(-225deg);
-    top: 45%;
+#checkbox:checked~ .line--top{
+    transform: rotate(45deg);
 }
 
+#checkbox:checked~ .line--middle{
+    transform: translateX(16px);
+    opacity:0;
+}
+
+#checkbox:checked~ .line--bottom{
+    transform: rotate(-45deg);
+}
 /*fim header*/
 
 /*inicio main*/

@@ -1,7 +1,7 @@
 
 $(document).ready(function() {
 
-$(".hamburguer").click(function(){
+$("#checkbox").click(function(){
     $(this).toggleClass("active");
     $(".navegacao").toggleClass("active");
 });
