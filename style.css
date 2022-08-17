@@ -155,7 +155,7 @@ main.corpo-princinpal h2{
 }
 
 .typing-demo{
-    width: 23.3ch;
+    width: 34.3ch;
     animation: typing 2s steps(22), blink .5s step-end infinite alternate;
     white-space: nowrap;
     overflow: hidden;
