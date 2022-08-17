@@ -39,14 +39,14 @@
             <article class="sessao-home">
                 <h2>Olá, eu sou</h2>
                 <h1>Athos Alexandre</h1>
-                <h2>Desenvolvedor FRONT-END</h2>
+                <h2 class="typing-demo">Desenvolvedor FRONT-END</h2>
                 <P>Observação:(A caminho do FULL-STACK)</P>
                 <div class="container-bnt">
                     <a href="https://github.com/AthosAlexandre" target="_blank"><button class="bnt-git">GitHub</button></a>
                     <a href="https://www.linkedin.com/in/athos-alexandre-109199218/" target="_blank"><button class="bnt-link">Linkedin</button></a>
                 </div><!--container-bnt-->
             </article><!--sessao-home-->
-            <img src="imagens/garoto-dev-principal.jpg" alt="">
+            <img src="imagens/garoto-dev-principal.jpg" alt="" class="box">
         </section><!--sessao-home-cont-->
 
         <section class="sessao-sobre-mim" id="sobre-mim" data-aos="fade-right">
@@ -122,6 +122,11 @@
         </section><!--sessao-experiencia-->
 
     </main><!--corpo-principal-->
+
+    <footer>
+        <p>&copy; Copyright todos os direitos reservados pelo desenvolvedor Athos</p>
+    </footer>
+
     <script src="jquery.js"></script>
     <script src="menu.js"></script>
     <script src="tecnologias.js"></script>
@@ -132,8 +137,13 @@
     });
     </script>
 
-    <footer>
-        <p>&copy; Copyright todos os direitos reservados pelo desenvolvedor Athos</p>
-    </footer>
+<script src="vanilla-tilt.min.js"></script>
+
+<script>
+    VanillaTilt.init(document.querySelectorAll(".box"), {
+    max: 25,
+    speed: 400
+});
+</script>
 </body>
 </html>

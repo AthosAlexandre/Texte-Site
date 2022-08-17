@@ -28,6 +28,12 @@ body {
 }
 /*fim rezet*/
 
+
+section{
+min-height: 100vh;
+width: 100%;
+}
+
 /*inicio header*/
 header{
     background-color:#fea34df9;
@@ -36,6 +42,7 @@ header{
     width: 100%;
     overflow: hidden;
     top: 0;
+    z-index: 11;
 }
 
 header.cabecalho nav.navegacao-sobre-mim img{
@@ -125,6 +132,16 @@ header.cabecalho .navegacao-sobre-mim a:hover{
     width: 100%;
     max-width: 600px;
     min-width: 350px;
+   z-index: 10;
+   transition: .5s;
+   border: 1px solid white;
+   transform-style: preserve-3d;
+   transform: translate3d(-50%,-50%,50px) rotate(50deg);
+   
+}
+
+section.sessao-home-cont img:hover{
+    transform: translate3d(-50%,-50%,100px) rotate(50deg);
 }
  section.sessao-home-cont p{
     color: var(--vermelho);
@@ -135,6 +152,27 @@ main.corpo-princinpal h2{
     color: var(--laranja);
     font-weight: 300;
     font-size: 27px;
+}
+
+.typing-demo{
+    width: 23.3ch;
+    animation: typing 2s steps(22), blink .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right:3px solid white;
+}
+
+@keyframes typing{
+
+    from{
+        width: 0;
+    }
+}
+
+@keyframes blink{
+    50%{
+        border-color: transparent;
+    }
 }
 
 section.sessao-home-cont h2:last-of-type{
@@ -421,7 +459,7 @@ footer{
     
     .hamburguer{
         display: block;
-        z-index: 999;
+        z-index: 1000;
     }
     
 
@@ -439,6 +477,7 @@ footer{
         width: 100%;
         max-width:300px;
         transition: 1s ease;
+        
     }
 
     .navegacao.active{
