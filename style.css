@@ -25,6 +25,7 @@ html{
 
 body {
     background-color: #27283D;
+    
 }
 /*fim rezet*/
 
@@ -119,6 +120,9 @@ header.cabecalho .navegacao-sobre-mim a:hover{
 /*inicio main*/
 
 /*inicio sessao-home-cont*/
+.sessao-home{
+    width: 330px;
+}
  section.sessao-home-cont{
     display: flex;
     justify-content: space-evenly;
