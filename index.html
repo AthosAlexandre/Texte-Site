@@ -1,14 +1,149 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
+<head>
     <meta charset="UTF-8">
-    <link rel="icon" href="coding-pc.png">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfólio do Athos</title>
-    <script type="module" crossorigin src="assets/index-650c6691.js"></script>
-    <link rel="stylesheet" href="assets/index-14f935eb.css">
-  </head>
-  <body>
-    <div id="app"></div>
-  </body>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="imagens/coding-pc.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <title>Meu Portfólio</title>
+</head>
+<body>
+    <header class="cabecalho">
+        
+        <nav class="navegacao-sobre-mim">
+            <img src="imagens/coding.png" alt="">
+
+            <label for="checkbox" class="hamburguer">
+                <input type="checkbox" id="checkbox">
+                <span class="line line--top"></span>
+                <span class="line line--middle"></span>
+                <span class="line line--bottom"></span>
+            </label>
+
+            
+            <div class="navegacao active">
+                <a href="#home">Home</a>
+                <a href="#sobre-mim">Sobre mim</a>
+                <a href="#projetos">Projetos</a>
+                <a href="#habilidades">Habilidades</a>
+                <a href="#experiencia">Experiência</a>
+            </div><!--navegacao-->
+        </nav><!--navegacao-sobre-mim-->
+
+    </header><!--cabecalho-->
+
+    <main class="corpo-princinpal">
+        <section class="sessao-home-cont" id="home" data-aos="fade-right">
+            <article class="sessao-home">
+                <h2>Olá, eu sou</h2>
+                <h1>Athos Alexandre</h1>
+                <h2 class="typing-demo">Desenvolvedor FRONT-END</h2>
+                <P>Observação:(A caminho do FULL-STACK)</P>
+                <div class="container-bnt">
+                    <a href="https://github.com/AthosAlexandre" target="_blank"><button class="bnt-git">GitHub</button></a>
+                    <a href="https://www.linkedin.com/in/athos-alexandre-109199218/" target="_blank"><button class="bnt-link">Linkedin</button></a>
+                </div><!--container-bnt-->
+            </article><!--sessao-home-->
+            <img src="imagens/garoto-dev-principal.jpg" alt="" class="box">
+        </section><!--sessao-home-cont-->
+
+        <section class="sessao-sobre-mim" id="sobre-mim" data-aos="fade-right">
+            <img src="imagens/athos-alexandre.jpg" alt="">
+            <article class="sobre-mim-texto-container">
+                <h2>Sobre mim</h2>
+                <p>Olá! Meu nome é Athos Alexandre, nesse momento estou cursando Sistemas de Informação na Universidade Federal de Mato Grosso do Sul, campus de Coxim, eu amo tecnologia. Apesar de que  estou cursando uma faculdade e trabalhando no exército brasileiro, estou estudando para ser um FULL-STACK, sei bem a parte do FRONT-END e duas Linguagens para a parte do BACK-END, então falta a parte do banco de dados, porém, já estou iniciando os estudos de banco de dados. Eu acredito que com o que  sei, consigo trabalhar no FRONT-END, sou muito estudioso, sempre estou buscando melhorar.</p>
+            </article><!--sobre-mim-texto-container-->
+        </section><!--sessao-sobre-mim-->
+
+        <section class="sessao-projetos" id="projetos" data-aos="fade-right">
+            <h2>Projetos</h2>
+            <div class="container-projetos">
+                <article class="projeto-nosh">
+                    <img src="./imagens/nosh.jpg" alt="">
+                    <h3>Nosh</h3>
+                    <p>Esse projeto foi para testar minhas habilidades de front-end, uma copia do site de comida Nosh.</p>
+                    <button class="bnt">Em Produção</button>
+                </article><!--projeto-nosh-->
+                <article class="projeto-nosh">
+                    <img src="imagens/bg.jpg" alt="">
+                    <h3>RM VEICULOS</h3>
+                    <p>Esse projeto foi para testar minhas habilidades de front-end, um site de atividade do curso da danki-code.</p>
+                    <a href="https://resplendent-crisp-ba74d9.netlify.app/index.html" target="_blank"><button class="bnt">Visualizar</button></a>
+                </article><!--projeto-nosh-->
+                <article class="projeto-nosh">
+                    <img src="imagens/projeto_odonto-372bd8d5.jpeg" alt="">
+                    <h3>danki-code</h3>
+                    <p>Esse projeto foi para testar minhas habilidades de front-end, um site de atividade do curso da danki-code.</p>
+                    <a href="https://celebrated-marshmallow-90c661.netlify.app/" target="_blank"><button class="bnt">Visualizar</button></a>
+                </article><!--projeto-nosh-->
+                
+            </div><!--container-projetos-->
+        </section><!--sessao-projetos-->
+
+        <section class="sessao-habilidades" id="habilidades" data-aos="fade-right">
+                <h2>Habilidades</h2>
+            <div class="container-habilidades">
+                
+                <div class="container-logos">
+                    <div class="imagens-programacao html">
+                        <img src="imagens/html-logo.png" alt="">
+                    </div><!--imagens-programacao-->
+                    
+                    <div class="imagens-programacao css">
+                        <img src="imagens/css-logo.png" alt="">
+                    </div><!--imagens-programacao-->
+                    <div class="imagens-programacao js js-logo">
+                        <img class="js-logo" src="https://icon-library.com/images/javascript-icon-png/javascript-icon-png-23.jpg" alt="">
+                    </div><!--imagens-programacao-->
+                    <div class="imagens-programacao vue">
+                        <img src="https://br.vuejs.org/images/logo.svg" alt="">
+                    </div><!--imagens-programacao-->
+                    <div class="imagens-programacao gitHub">
+                        <img src="imagens/github-logo_icon-icons.com_73546.png" alt="">
+                    </div><!--imagens-programacao-->
+                    <div class="imagens-programacao java">
+                        <img src="imagens/java-logo.png" alt="">
+                    </div><!--imagens-programacao-->
+                </div><!--container-logos-->
+                <div class="container-texto">
+                    <p class="sobre-a-linguagem">Passe o mouse por cima de cada tecnologia ao lado.</p>
+                </div><!--container-texto-->
+            </div><!--container-habilidades-->
+        </section><!--sessao-habilidades-->
+
+        <section class="sessao-experiencia" id="experiencia" data-aos="fade-right">
+            <h2>Experiência</h2>
+            <div class="container-experiencia">
+                <p>Ainda não trabalhei na área de desenvolvimento e programação, mas pode ser sua empresa a minha grande chance da vida.</p>
+                <img src="imagens/programing.png" alt="">
+            </div><!--container-experiencia-->
+        </section><!--sessao-experiencia-->
+
+    </main><!--corpo-principal-->
+
+    <footer>
+        <p>&copy; Copyright todos os direitos reservados pelo desenvolvedor Athos</p>
+    </footer>
+
+    <script src="jquery.js"></script>
+    <script src="menu.js"></script>
+    <script src="tecnologias.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({duration: 1500,
+                
+    });
+    </script>
+
+<script src="vanilla-tilt.min.js"></script>
+
+<script>
+    VanillaTilt.init(document.querySelectorAll(".box"), {
+    max: 25,
+    speed: 400
+});
+</script>
+</body>
 </html>
